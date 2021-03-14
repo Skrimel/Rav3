@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Татьяна\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Татьяна\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Inventory Project.-1633496434.00" t="ExcludeRecursive" />
+    <e p="E:\Unity\Projects\Inventory Project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Internal" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Backpack" t="Include">
+              <e p="Backpack.cs" t="Include" />
+              <e p="BackpackController.cs" t="Include" />
+              <e p="Item" t="Include">
+                <e p="Item.cs" t="Include" />
+                <e p="ItemModel.cs" t="Include" />
+                <e p="ItemTypeModel.cs" t="Include" />
+              </e>
+              <e p="Slot" t="Include">
+                <e p="Slot.cs" t="Include" />
+                <e p="SlotAnimator.cs" t="Include" />
+                <e p="SlotCollider.cs" t="Include" />
+                <e p="SlotModel.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Controls" t="Include">
+              <e p="Drag" t="Include">
+                <e p="DragController.cs" t="Include" />
+                <e p="DragProfile.cs" t="Include" />
+              </e>
+              <e p="InputController.cs" t="Include" />
+              <e p="Mouse" t="Include">
+                <e p="MouseController.cs" t="Include" />
+              </e>
+              <e p="MouseState.cs" t="Include" />
+              <e p="Selection" t="Include">
+                <e p="SelectionController.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="UIController.cs" t="Include" />
+              </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="SlotView.cs" t="Include" />
+              <e p="SlotViewsController.cs" t="Include" />
+            </e>
+            <e p="Web" t="Include">
+              <e p="BackpackProjectRequest.cs" t="Include" />
+              <e p="BackpackProjectRequestsHandler.cs" t="Include" />
+              <e p="Requests" t="Include">
+                <e p="TestRequest.cs" t="Include" />
+              </e>
+              <e p="Responses" t="Include">
+                <e p="TestResponse.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Gist" t="Include">
+            <e p="Ids" t="Include">
+              <e p="Extensions" t="Include">
+                <e p="Identified.cs" t="Include" />
+                <e p="IdentifiedScriptableObject.cs" t="Include" />
+              </e>
+              <e p="Id.cs" t="Include" />
+              <e p="IIdentified.cs" t="Include" />
+            </e>
+            <e p="Web" t="Include">
+              <e p="Runtime" t="Include">
+                <e p="Requests" t="Include">
+                  <e p="IRequest.cs" t="Include" />
+                  <e p="IRequestBase.cs" t="Include" />
+                  <e p="Request.cs" t="Include" />
+                  <e p="UnityWebRequestAwaiter.cs" t="Include" />
+                </e>
+                <e p="RequestsHandler.cs" t="Include" />
+                <e p="RequestsPool.cs" t="Include" />
+                <e p="Response" t="Include">
+                  <e p="IResponse.cs" t="Include" />
+                  <e p="Response.cs" t="Include" />
+                </e>
+                <e p="Skrimel.Gist.Web.asmdef" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Inventory Project.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Skrimel.Gist.Web.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
