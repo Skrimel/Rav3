@@ -7,11 +7,11 @@ namespace Skrimel.BackpackProject.Controls
     {
         [SerializeField] private MouseController _mouseController = default;
 
-        private void LateUpdate()
+        private void Update()
         {
             if (_mouseController.LeftButtonState != Input.GetMouseButton(0))
                 _mouseController.SetLeftButtonState(Input.GetMouseButton(0));
-            
+
             if (_mouseController.ScreenPosition != Input.mousePosition)
                 _mouseController.SetScreenPosition(Input.mousePosition);
         }

@@ -40,6 +40,12 @@ namespace Skrimel.BackpackProject.Backpack.UI
                 _viewController.SelectItem(this);
         }
 
+        private void OnMouseExit()
+        {
+            if (_viewController.SelectedItem == this)
+                _viewController.SelectItem(default);
+        }
+
         protected void SetActivity(bool activity)
         {
             if (IsActive == activity)

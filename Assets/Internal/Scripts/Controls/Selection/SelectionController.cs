@@ -19,6 +19,10 @@ namespace Skrimel.BackpackProject.Controls.Selection
 
         private void Awake() =>
             _mouseController.LeftButtonStateChanged += HandleButtonStateChange;
+        
+
+        private void OnDestroy() =>
+            _mouseController.LeftButtonStateChanged -= HandleButtonStateChange;
 
         private void HandleButtonStateChange()
         {

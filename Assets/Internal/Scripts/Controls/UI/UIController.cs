@@ -1,5 +1,4 @@
 ﻿using System;
-using Skrimel.BackpackProject.Backpack;
 using Skrimel.BackpackProject.Controls.Mouse;
 using Skrimel.BackpackProject.Controls.Selection;
 using UnityEngine;
@@ -17,11 +16,17 @@ namespace Skrimel.BackpackProject.Controls.UI
 
         private void Awake()
         {
-            _mouseController.LeftButtonStateChanged += HandleMouseChange;
-            _mouseController.PositionChanged += HandleMouseChange;
+            _mouseController.LeftButtonStateChanged += HandleMouseButtonChange;
+            _mouseController.PositionChanged += HandleMousePositionChange;
         }
 
-        private void HandleMouseChange()
+        private void OnDestroy()
+        {
+            _mouseController.LeftButtonStateChanged -= HandleMouseButtonChange;
+            _mouseController.PositionChanged -= HandleMousePositionChange;
+        }
+
+        private void HandleMouseButtonChange()
         {
             if (_mouseController.IsLeftButtonDown && _selectionController.SelectedItem == default)
             {
@@ -30,6 +35,15 @@ namespace Skrimel.BackpackProject.Controls.UI
 
                 if (hit.transform == _backpack.transform && !_backpack.UiVisible)
                     _backpack.ShowUI();
+            }
+        }
+
+        private void HandleMousePositionChange()
+        {
+            if (_mouseController.IsLeftButtonDown && _selectionController.SelectedItem == default)
+            {
+                var ray = _camera.ScreenPointToRay(_mouseController.ScreenPosition);
+                Physics.Raycast(ray, out RaycastHit hit, float.MaxValue, _layerMask);
 
                 if (hit.transform != _backpack.transform && hit.transform != _canvas.transform && _backpack.UiVisible)
                     _backpack.HideUI();

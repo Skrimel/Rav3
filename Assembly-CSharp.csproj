@@ -53,13 +53,15 @@
      <Compile Include="Assets\Internal\Scripts\Backpack\Backpack.cs" />
      <Compile Include="Assets\Internal\Scripts\Web\BackpackProjectRequest.cs" />
      <Compile Include="Assets\Internal\Scripts\Web\BackpackProjectRequestsHandler.cs" />
+     <Compile Include="Assets\Internal\Scripts\Backpack\Slot\SlotAnimator.cs" />
      <Compile Include="Assets\Internal\Scripts\Controls\Mouse\MouseController.cs" />
      <Compile Include="Assets\Internal\Scripts\Backpack\Item\ItemModel.cs" />
      <Compile Include="Assets\Internal\Scripts\Controls\InputController.cs" />
      <Compile Include="Assets\Internal\Scripts\Backpack\Item\Item.cs" />
      <Compile Include="Assets\Internal\Scripts\UI\SlotView.cs" />
      <Compile Include="Assets\Internal\Scripts\Controls\Drag\DragProfile.cs" />
-     <Compile Include="Assets\Internal\Scripts\Controls\MouseState.cs" />
+     <Compile Include="Assets\Internal\Scripts\Backpack\Slot\SlotCollider.cs" />
+     <Compile Include="Assets\Internal\Scripts\UI\SlotViewsController.cs" />
      <Compile Include="Assets\Internal\Scripts\Controls\UI\UIController.cs" />
      <Compile Include="Assets\Internal\Scripts\Backpack\Slot\Slot.cs" />
      <Compile Include="Assets\Internal\Scripts\Web\Responses\TestResponse.cs" />
@@ -69,9 +71,6 @@
      <Compile Include="Assets\Internal\Scripts\Backpack\Slot\SlotModel.cs" />
      <Compile Include="Assets\Internal\Scripts\Controls\Selection\SelectionController.cs" />
      <Compile Include="Assets\Internal\Scripts\Backpack\Item\ItemTypeModel.cs" />
-     <Compile Include="Assets\Internal\Scripts\Backpack\Slot\SlotCollider.cs" />
-     <Compile Include="Assets\Internal\Scripts\Backpack\Slot\SlotAnimator.cs" />
-     <Compile Include="Assets\Internal\Scripts\UI\SlotViewsController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Unity/Projects/Inventory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -300,11 +299,11 @@
  <Reference Include="UnityEditor">
  <HintPath>E:/Unity/2020.1.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
- <Reference Include="nunit.framework">
- <HintPath>E:/Unity/Projects/Inventory Project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
  <Reference Include="DOTween">
  <HintPath>E:/Unity/Projects/Inventory Project/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>E:/Unity/Projects/Inventory Project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>E:/Unity/2020.1.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

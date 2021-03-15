@@ -10,7 +10,7 @@ namespace Skrimel.BackpackProject.Backpack.UI
         [SerializeField] private List<SlotView> _items = default;
 
         public bool UiVisible { get; private set; } = false;
-        public event Action SelecteItemChanged;
+        public event Action SelectedItemChanged;
         public SlotView SelectedItem { get; private set; } = null;
 
         public void ShowUI()
@@ -42,7 +42,7 @@ namespace Skrimel.BackpackProject.Backpack.UI
                 throw new OperationCanceledException("Item is already selected");
 
             SelectedItem = item;
-            SelecteItemChanged?.Invoke();
+            SelectedItemChanged?.Invoke();
         }
 
         private void SetUiVisibility(bool state)

@@ -50,17 +50,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\Gist\Ids\Id.cs" />
-     <Compile Include="Assets\Plugins\Gist\Ids\IIdentified.cs" />
-     <Compile Include="Assets\Plugins\Gist\Ids\Extensions\Identified.cs" />
-     <Compile Include="Assets\Plugins\Gist\Ids\Extensions\IdentifiedScriptableObject.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Plugins\Gist\Ids\Id.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Plugins\Gist\Ids\IIdentified.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Plugins\Gist\Ids\Extensions\Identified.cs" />
+     <Compile Include="Assets\Plugins\Gist\Ids\Extensions\IdentifiedScriptableObject.cs" />
      <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Unity/Projects/Inventory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -290,11 +290,11 @@
  <Reference Include="UnityEditor">
  <HintPath>E:/Unity/2020.1.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
- <Reference Include="nunit.framework">
- <HintPath>E:/Unity/Projects/Inventory Project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
  <Reference Include="DOTween">
  <HintPath>E:/Unity/Projects/Inventory Project/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>E:/Unity/Projects/Inventory Project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>E:/Unity/2020.1.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

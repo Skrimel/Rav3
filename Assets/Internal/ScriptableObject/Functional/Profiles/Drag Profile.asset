@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f27c8c89c29471e98a201084489929f, type: 3}
   m_Name: Drag Profile
   m_EditorClassIdentifier: 
-  _springStiffnessRatio: 260
+  _springStiffnessRatio: 250

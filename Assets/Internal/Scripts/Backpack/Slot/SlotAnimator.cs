@@ -23,6 +23,12 @@ namespace Skrimel.BackpackProject.Backpack.Slots
             Slot.CurrentItemChanged += AnimateAttach;
         }
 
+        private void OnDestroy()
+        {
+            Slot.CurrentItemChanging -= AnimateDetach;
+            Slot.CurrentItemChanged -= AnimateAttach;
+        }
+
         public void AnimateAttach(Item item)
         {
             if (Slot.CurrentItem != default)

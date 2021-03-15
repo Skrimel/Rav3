@@ -32,12 +32,23 @@ namespace Skrimel.BackpackProject.Backpack
             _mouseController.PositionChanged += ResolveSlotsCollision;
         }
 
+        private void OnDestroy()
+        {
+            foreach (var slot in _slots)
+            {
+                slot.CurrentItemChanged -= HandleItemChange;
+                slot.Collider.ItemsChanged -= ResolveSlotsCollision;
+            }
+
+            _mouseController.PositionChanged -= ResolveSlotsCollision;
+        }
+
         private void ResolveSlotsCollision()
         {
             foreach (var slot in _slots)
                 ResolveSlotCollision(slot);
         }
-        
+
         private void ResolveSlotCollision(Slot slot)
         {
             if (slot.Collider.HasCollidingItems && slot.CurrentItem == default)
@@ -61,8 +72,8 @@ namespace Skrimel.BackpackProject.Backpack
         }
 
         public IEnumerable<Item> GetCurrentItems => _slots
-                .Where(item => item.CurrentItem != default)
-                .Select(item => item.CurrentItem);
+            .Where(item => item.CurrentItem != default)
+            .Select(item => item.CurrentItem);
 
         public Slot GetSlot(Item item) =>
             _slots.First(slot => slot.CurrentItem == item);
